@@ -1,0 +1,295 @@
+{% load static%}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Secondhandautos.com</title>
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="{% static './css/all.css' %}">
+
+
+    <!-- --------- Owl-Carousel ------------------->
+    <link rel="stylesheet" href="{% static './css/owl.carousel.min.css' %}">
+    <link rel="stylesheet" href="{% static './css/owl.theme.default.min.css' %}">
+
+    <!-- ------------ AOS Library ------------------------- -->
+    <link rel="stylesheet" href="{% static './css/aos.css' %}">
+
+    <!-- Custom Style   -->
+    <link rel="stylesheet" href="{% static './css/Style.css' %}">
+    <link rel="stylesheet" href="{% static './css/booking_form.css' %}" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Coda&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Patua+One&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Prosto+One&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Comfortaa&display=swap"
+      rel="stylesheet"
+    />
+
+</head>
+
+<body style="height: 120vh;">
+
+    <!-- ----------------------------  Navigation ---------------------------------------------- -->
+
+    <nav class="nav">
+        <div class="nav-menu flex-row">
+            <div class="nav-brand">
+                <a href="index/{{index.html}}" class="text-gray">Secondhandautos.com</a>
+            </div>
+            <div class="toggle-collapse">
+                <div class="toggle-icons">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+            <div>
+                <ul class="nav-items">
+                    <li class="nav-link">
+                        <a href="./Index.html">Home</a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="django/index/car/">Buy Cars</a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="./form_sell.html">Sell Cars</a>
+                    </li>
+                    <li class="nav-link">
+                      <a href="contact/">Contact Us</a>
+                  </li>
+                </ul>
+            </div>
+            <div class="social text-gray">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ------------x---------------  Navigation --------------------------x------------------- -->
+
+    <!----------------------------- Main Site Section ------------------------------>
+    </div>
+    <div class="view_second">
+      <div class="form">
+        <div class="regform">
+          <h1> buying Form</h1>
+        </div>
+        <div class="main">
+          <form  method="POST">
+              {% csrf_token %}
+            <div class="left">
+              <label for="name">Name</label>
+              <br />
+              <label for="company" class="company_label"
+                >Model Name</label
+              >
+              <br />
+              <label for="email" class="email_label">Email</label>
+              <br />
+              <label for="name" class="number_label">Phone number</label>
+              <br />
+              <label for="address" class="location_label">Location</label>
+              <br />
+              <label for="booking_type" class="booking_label"
+                >Year</label
+              >
+            </div>
+            <div class="right">
+              <div class="all">
+                <input
+                  type="text"
+                  class="name"
+                  name="firstname"
+                  placeholder="Name"
+                  required
+                />
+                <input
+                  type="text"
+                  class="name"
+                  name="lastname"
+                  placeholder="last Name"
+                  required
+                />
+                <br />
+                <small class="first_name">
+                  <label for="first_name">First Name</label>
+                </small>
+                <input
+                  type="hidden"
+                  name="hidden"
+                  value="hidden"
+                  placeholder="empty"
+                />
+                <small class="last_name">
+                  <label for="last_name">Last Name</label>
+                </small>
+                <input
+                  type="hidden"
+                  name="hidden"
+                  value="hidden"
+                  placeholder="empty"
+                />
+                <br />
+                <label for="name"></label>
+                <br />
+                <label for="name"></label>
+                <br />
+                <input
+                  type="text"
+                  class="general"
+                  name="modelname"
+                  placeholder=""
+                />
+                <br />
+                <label for="name"></label>
+                <br />
+                <label for="name"></label>
+                <br />
+                <input
+                  type="text"
+                  class="general"
+                  name="email"
+                  placeholder="abc123@gmail.com"
+                  required
+                />
+                <br />
+                <label for="name"></label>
+                <br />
+                <label for="name"></label>
+                <br />
+
+                <input
+                  type="number"
+                  class="phone_number"
+                  name="phonenumber"
+                  value="number"
+                  placeholder="Number"
+                  min="10"
+                  required
+                />
+                <br />
+
+                <input
+                  type="hidden"
+                  name="hidden"
+                  value="hidden"
+                  placeholder="empty"
+                />
+                <small class="last_number">
+                  <label for="phone_number">Phone Number</label>
+                </small>
+                <input
+                  type="hidden"
+                  name="hidden"
+                  value="hidden"
+                  placeholder="empty"
+                />
+                <br />
+                <label for="name"></label>
+                <br />
+                <label for="name"></label>
+                <br />
+                <input
+                  type="text"
+                  class="general"
+                  name="location"
+                  placeholder="E.g. Atur Centre, Gokhale Cross Road, Model Colony, Shivajinagar, Pune, Maharashtra 411016"
+                  required
+                />
+                <br />
+                <label for="name"></label>
+                <br />
+                <label for="name"></label>
+                <br />
+                <input
+                  type="text"
+                  class="general"
+                  name="year"
+                  placeholder="E.g. 2018"
+                  required
+                />
+              </div>
+              <br />
+              <br />
+              <br />
+            </div>
+
+              <div class="button">
+                <button type="submit">Submit</button>
+              </div>
+              {% if messages %}
+              {% for message in messages %}
+              <h2>{{message}}</h2>
+              {% endfor  %}
+              {% endif %}
+
+          </form>
+        </div>
+      </div>
+    </div>
+
+
+
+
+    <!-- --------------------------- Footer ---------------------------------------- -->
+
+    <footer class="footer">
+        <div class="container">
+            <div class="about-us">
+                <h2>About us</h2>
+                <p>We are a market leaders in buying and selling second hand cars and bikes. ADSautomobiles.com was established in 2011.
+                    Ever since we have been growing and providing our customers Quality Cars and bikes.
+                </p>
+            </div>
+            <div class="newsletter">
+                <h2>Newsletter</h2>
+                <p>Stay update with our latest</p>
+                <div class="form-element">
+                    <input type="text" placeholder="Email"><span><i class="fas fa-chevron-right"></i></span>
+                </div>
+            </div>
+            </div>
+        </div>
+        <div class="rights flex-row">
+            <h4 class="text-gray">
+                Copyright ©2022 All rights reserved | ADSautomobiles.com
+            </h4>
+
+
+    <!-- -------------x------------- Footer --------------------x------------------- -->
+
+
+</body>
+
+</html>

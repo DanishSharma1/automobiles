@@ -1,0 +1,169 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ADSautomobiles.com</title>
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="{% static './css/all.css' %}">
+
+
+    <!-- --------- Owl-Carousel ------------------->
+    <link rel="stylesheet" href="{% static './css/owl.carousel.min.css' %}">
+    <link rel="stylesheet" href="{% static './css/owl.theme.default.min.css' %}">
+
+    <!-- ------------ AOS Library ------------------------- -->
+    <link rel="stylesheet" href="{% static './css/aos.css' %}">
+
+    <!-- Custom Style   -->
+    <link rel="stylesheet" href="{% static './css/Style.css' %}">
+    <link rel="stylesheet" href="{% static './css/contact.css' %}">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- ----------------------------  Navigation ---------------------------------------------- -->
+
+    <nav class="nav">
+        <div class="nav-menu flex-row">
+            <div class="nav-brand">
+                <a href="./Index.html" class="text-gray">ADSautmobiles.com</a>
+            </div>
+            <div class="toggle-collapse">
+                <div class="toggle-icons">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+            <div>
+                <ul class="nav-items">
+                    <li class="nav-link">
+                        <a href="/django/index/">Home</a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="car/">Buy Cars</a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="sell/">Sell Cars</a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="./contact.html">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="social text-gray">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ------------x---------------  Navigation --------------------------x------------------- -->
+
+    <!----------------------------- Main Site Section ------------------------------>
+    
+    <div class="cont">
+        <h1>Connect with Us</h1>
+        <p>We would love to respond to your queries and help you in purchasing your Dream Car.<br>
+        Please Feel free to get in touch with us.</p>
+        <div class="cont-box">
+            <div class="cont-left">
+                <h3>Send your request</h3>
+                <form method="POST" >
+                    {% csrf_token %}
+                    <div class="inp-row">
+                        <div class="inp-group">
+                            <label>Name</label>
+                            <input type="text" placeholder="Name" name="name">
+                        </div>
+                        <div class="inp-group">
+                            <label>Phone</label>
+                            <input type="text" placeholder="fill Phone number " name="phone">
+                        </div>
+                    </div>
+                    <div class="inp-row">
+                        <div class="inp-group">
+                            <label>Email</label>
+                            <input type="email" placeholder="abc123@gmail.com" name="email">
+                        </div>
+                        <div class="inp-group">
+                            <label>Subject</label>
+                            <input type="text" placeholder="Book Test Drive " name="subject">
+                        </div>
+                         <div class="inp-group">
+                            <label>date</label>
+                            <input type="text" placeholder="date of test drive " name="date">
+                        </div>
+                    </div>
+                    <div>
+                        <button type="submit">Submit</button>
+                    </div>
+                    {% if messages %}
+                    {% for meesage in messages %}
+                    <h2>{{message}}</h2>
+                    {% endfor %}
+                    {% endif %}
+                </form>
+            </div>
+            <div class="cont-right">
+                <h3>Reach Us</h3>
+                <table>
+                    <tr>
+                        <td>Email</td>
+                        <td>behalsoumay@gmail.com</td>
+                        
+                    </tr>
+                    <tr>
+                        <td>Phone</td>
+                        <td>+91 8968737565</td>
+                    </tr>
+                    <tr>
+                        <td>Address</td>
+                        <td>Atur Centre, Gokhale Cross Road, Model Colony, Shivajinagar, Pune, Maharashtra 411016</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+    
+
+    <!-- --------------------------- Footer ---------------------------------------- -->
+
+    <footer class="footer">
+        <div class="container">
+            <div class="about-us">
+                <h2>About us</h2>
+                <p>We are a market leaders in buying and selling second hand cars and bikes. ADSautomobiles.com was established in 2011.
+                    Ever since we have been growing and providing our customers Quality Cars and Bikes.
+                </p>
+            </div>
+            <div class="newsletter">
+                <h2>Newsletter</h2>
+                <p>Stay update with our latest</p>
+                <div class="form-element">
+                    <input type="text" placeholder="Email"><span><i class="fas fa-chevron-right"></i></span>
+                </div>
+            </div>
+            </div>
+        </div>
+        <div class="rights flex-row">
+            <h4 class="text-gray">
+                Copyright ©2022 All rights reserved | ADSautomobiles.com
+            </h4>
+        
+
+    <!-- -------------x------------- Footer --------------------x------------------- -->
+
+
+</body>
+
+</html>

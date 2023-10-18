@@ -1,0 +1,224 @@
+{% load static%}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ADSautomobiles.com</title>
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="{% static './css/all.css' %}">
+
+
+    <!-- --------- Owl-Carousel ------------------->
+    <link rel="stylesheet" href="{% static './css/owl.carousel.min.css' %}">
+    <link rel="stylesheet" href="{% static './css/owl.theme.default.min.css' %}">
+
+    <!-- ------------ AOS Library ------------------------- -->
+    <link rel="stylesheet" href="{% static './css/aos.css' %}">
+
+    <!-- Custom Style   -->
+    <link rel="stylesheet" href="{% static './css/Style.css' %}">
+
+</head>
+
+<body>
+
+    <!-- ----------------------------  Navigation ---------------------------------------------- -->
+
+    <nav class="nav">
+        <div class="nav-menu flex-row">
+            <div class="nav-brand">
+                <a href="./index.html" class="text-gray">ADSautomobiles.com</a>
+            </div>
+            <div class="toggle-collapse">
+                <div class="toggle-icons">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+            <div>
+                <ul class="nav-items">
+                    <li class="nav-link">
+                        <a href="/django/index">Home</a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="./Sell_form.html">Buy Cars</a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="sell/">Sell Cars</a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="contact/">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="social text-gray">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ------------x---------------  Navigation --------------------------x------------------- -->
+
+    <!----------------------------- Main Site Section ------------------------------>
+    
+    <div class="image-grid">
+        <img class="image-grid-col-2 image-grid-row-2" src="{% static './assets/Secondhandautos/city.png' %}" alt="architecture">
+        <img src="{% static './assets/Secondhandautos/creta.png' %}" alt="architecture">
+        <img src="{% static './assets/Secondhandautos/fortuner.png' %}" alt="architecture">
+        <img src="{% static './assets/Secondhandautos/blcl.jpg' %}" alt="architecture">
+        <img src="{% static './assets/Secondhandautos/blst.jpg' %}" alt="architecture">
+        <img src="{% static './assets/Secondhandautos/pl150.jpg' %}" alt="architecture">
+        <img src="{% static './assets/Secondhandautos/pl400.jpg' %}" alt="architecture">
+        <img src="{% static './assets/Secondhandautos/mt.jpg' %}" alt="architecture">
+        <img src="{% static './assets/Secondhandautos/z900.jpg' %}" alt="architecture">
+        <img src="{% static './assets/Secondhandautos/sx4.png' %}" alt="architecture">
+        <img src="{% static './assets/Secondhandautos/swift2.png' %}" alt="architecture">
+        <img src="{% static './assets/Secondhandautos/i20.png' %}" alt="architecture">
+        
+    </div>
+    <center>
+    <h1>Cars Available</h1>
+    <table border="1">
+
+
+
+        <tr>
+
+            <td>CarName</td>
+            <td>CarModelYear</td>
+            <td>Price</td>
+            <td>Color</td>
+            <td>Click on tab to buy car</td>
+
+
+        </tr>
+        <tr>
+            <td>Swift</td>
+            <td>2020</td>
+            <td>4 lakhs</td>
+            <td>White</td>
+            <td><a href="fill/"> Buy Car</a></td>
+
+        </tr>
+        <tr>
+            <td>Fortuner</td>
+            <td>2021</td>
+            <td>50 lakhs</td>
+            <td>White</td>
+            <td><a href="fill/">Buy Car</a> </td>
+        </tr>
+
+        <tr>
+            <td>Honda City</td>
+            <td>2018</td>
+            <td>12.40 lakh</td>
+            <td>Grey</td>
+            <td><a href="fill/">Buy Car</a> </td>
+        </tr>
+        <tr>
+            <td>Creta</td>
+            <td>2021</td>
+            <td>13 lakhs</td>
+            <td>White</td>
+            <td><a href="fill/">Buy Car</a> </td>
+        </tr>
+        <tr>
+            <td>i20</td>
+            <td>2019</td>
+            <td>8 lakhs</td>
+            <td>Red</td>
+            <td><a href="fill/">Buy Car</a> </td>
+        </tr>
+        <tr>
+            <td>Swift</td>
+            <td>2020</td>
+            <td>3.80 lakhs</td>
+            <td>Red</td>
+            <td><a href="fill/">Buy Car</a> </td>
+        </tr>
+
+    </table>
+        <h2>Bikes Available</h2>
+        <table border="1">
+            <tr>
+                <td>BikeName</td>
+                <td>ModelYear</td>
+                <td>Price</td>
+                <td>color</td>
+                <td>Click to Buy</td>
+            </tr>
+            <tr>
+                <td>Kawasaki Z900</td>
+                <td>2020</td>
+                <td>10 lakhs</td>
+                <td>green</td>
+                <td><a href="fill/">Buy Bike</a> </td>
+            </tr>
+            <tr>
+                <td>Pulsar 200</td>
+                <td>2022</td>
+                <td>2 lakhs</td>
+                <td>green</td>
+                <td><a href="fill/">Buy Bike</a> </td>
+            </tr>
+            <tr>
+                <td>Pulsar RS 400</td>
+                <td>2021</td>
+                <td>2.5 lakhs</td>
+                <td>green</td>
+                <td><a href="fill/">Buy Bike</a> </td>
+            </tr>
+            <tr>
+                <td>Bullet Classic</td>
+                <td>2020</td>
+                <td>3.5 lakhs</td>
+                <td>green</td>
+                <td><a href="fill/">Buy Bike</a> </td>
+            </tr>
+<tr>
+                <td>Bullet Standard</td>
+                <td>2020</td>
+                <td>1.75 lakhs</td>
+                <td>green</td>
+                <td><a href="fill/">Buy Bike</a> </td>
+            </tr>
+        </table>
+    </center>
+
+    <!-- --------------------------- Footer ---------------------------------------- -->
+
+    <footer class="footer">
+        <div class="container">
+            <div class="about-us">
+                <h2>About us</h2>
+                <p>We are a market leaders in buying and selling second hand cars and bikes. ADSautomobiles.com was established in 2011.
+                    Ever since we have been growing and providing our customers Quality Cars and bikes.
+                </p>
+            </div>
+            <div class="newsletter">
+                <h2>Newsletter</h2>
+                <p>Stay update with our latest</p>
+                <div class="form-element">
+                    <input type="text" placeholder="Email"><span><i class="fas fa-chevron-right"></i></span>
+                </div>
+            </div>
+            </div>
+        
+
+        </div>
+        <div class="rights flex-row">
+            <h4 class="text-gray">
+                Copyright ©2021 All rights reserved | ADSautomobiles.com
+            </h4>
+        
+
+    <!-- -------------x------------- Footer --------------------x------------------- -->
+</body>
+</html>
